@@ -1,0 +1,3 @@
+com\demo\beans\MyClass.class
+com\demo\aop\MyAspect.class
+com\demo\test\TestAOP.class
