@@ -1,0 +1,5 @@
+com\demo\beans\MyUser.class
+com\demo\MySpringConfiguration.class
+com\demo\beans\Product.class
+com\demo\beans\Address.class
+com\demo\test\TestPropertySource.class
