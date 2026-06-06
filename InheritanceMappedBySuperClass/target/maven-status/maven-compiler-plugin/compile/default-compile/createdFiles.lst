@@ -1,0 +1,5 @@
+com\demo\model\Customer.class
+com\demo\model\Person.class
+com\demo\test\TestGetData.class
+com\demo\test\TestInheritanceMappedBySuperClass.class
+com\demo\model\Employee.class

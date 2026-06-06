@@ -1,0 +1,4 @@
+com\demo\model\Customer.class
+com\demo\model\Person.class
+com\demo\test\TestInheritanceSingleTable.class
+com\demo\model\Employee.class
