@@ -1,0 +1,16 @@
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://192.168.10.112:3306/dac54?useSSL=false</property>
+		<property name="connection.username">dac54</property>
+		<property name="connection.password">welcome</property>
+		<property name="connection.pool_size">3</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="hbm2ddl.auto">update</property>
+		
+		<mapping class="com.demo.model.Student"/>
+		<mapping class="com.demo.model.Address"/>
+	</session-factory>
+</hibernate-configuration>

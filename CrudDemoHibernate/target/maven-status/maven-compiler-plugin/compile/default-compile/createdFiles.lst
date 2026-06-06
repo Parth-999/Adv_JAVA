@@ -1,0 +1,8 @@
+com\demo\model\Address.class
+com\demo\dao\HibernateUtil.class
+com\demo\dao\PersonDao.class
+com\demo\service\PersonService.class
+com\demo\service\PersonServiceImpl.class
+com\demo\test\CrudDemoTest.class
+com\demo\model\Person.class
+com\demo\dao\PersonDaoImpl.class

@@ -1,0 +1,10 @@
+<hibernate-mapping>
+<class name="com.demo.model.MyUser" table="myuser11">
+<id name="uid">
+<generator class="assigned"/>
+</id>
+<property name="name" type="string" column="uname"/>
+<property name="mobile" type="string"/>
+<property name="email" type="string"/>
+</class>
+</hibernate-mapping>

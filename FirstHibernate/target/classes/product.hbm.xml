@@ -1,0 +1,9 @@
+<hibernate-mapping>
+	<class name="com.demo.model.Product" table="myproduct">
+		<id name ="pid">
+			<generator class="assigned"/>
+		</id>
+		<property name="pname" type="string"></property>
+		<property name="qty" type="int"></property>
+	</class>
+</hibernate-mapping>
