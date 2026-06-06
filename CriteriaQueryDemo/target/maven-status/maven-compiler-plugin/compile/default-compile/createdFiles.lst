@@ -1,0 +1,3 @@
+com\demo\model\Product.class
+com\demo\test\TestCriteriaQueryProduct.class
+com\demo\test\TestProductData.class

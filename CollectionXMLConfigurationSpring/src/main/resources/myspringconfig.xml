@@ -1,0 +1,43 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<bean id="date1" class="java.time.LocalDate" factory-method="parse">
+	<constructor-arg value="2026-01-10"></constructor-arg>
+	</bean>
+	
+	
+<bean id="p1" class="com.demo.beans.Product">
+	<property name="pid" value="1"/>
+	<property name="pname" value="Bed"/>
+	<property name="qty" value="10"/>
+	<property name="price" value="100.22"/>
+	<property name="mfgDate" ref="date1"/>
+</bean>
+
+<bean id="p2" class="com.demo.beans.Product" autowire="constructor">
+	<constructor-arg index="0" value="2"/>
+	<constructor-arg index="1" value="Shelf"/>
+	<constructor-arg index="2" value="20"/>
+	<constructor-arg index="3" value="50.50"/>
+	<constructor-arg index="4" ref="date1"/>
+</bean>
+
+
+<bean id="c1" class="com.demo.beans.Customer">
+	<property name="cid" value="9"/>
+	<property name="cname" value="9"/>
+	<property name="addrlist">
+		<list>
+			<value>Hadapsar</value>
+			<value>Kataraj</value>
+			<value>Kothrudr</value>
+		</list>
+	</property>
+	<property name="orderlist">
+		<list>
+			<ref bean="p1"/>
+			<ref bean="p2"/>
+		</list>
+	</property>
+</bean>
+</beans>
